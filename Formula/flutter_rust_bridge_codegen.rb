@@ -11,6 +11,7 @@ class FlutterRustBridgeCodegen < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "47d6bb9a9367562aab32492390cfdcd7d02fc209e9812c8ceae1d53b2bf9614d"
     sha256 cellar: :any_skip_relocation, catalina:     "adb00fa48e04ac49928f4280993d8db02a59d01f32631fd5c2bd51382a8acece"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "605dd121ac8f60377c98ff9d5b5d867425a88554e0859c80369d4400f7570780"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "37231eb4cce33ab21261cfbc1ba2029ce19779b6ccef4b5bc4fd63b799cb23db"
   end
 
   depends_on "rust" => :build
