@@ -1,8 +1,8 @@
 class FlutterRustBridgeCodegen < Formula
   desc "High-level memory-safe binding generator for Flutter/Dart <-> Rust"
   homepage "https://fzyzcjy.github.io/flutter_rust_bridge"
-  url "https://github.com/fzyzcjy/flutter_rust_bridge/archive/v1.41.2.tar.gz"
-  sha256 "3bd5ed25da178bf4bed427c4dd9b6564db899bc897c48c3e70761adffcb8cc4c"
+  url "https://github.com/fzyzcjy/flutter_rust_bridge/archive/v1.41.3.tar.gz"
+  sha256 "edbd38a79d024cde48dbd7b2b18dc3925e845c20c7d0cd2f7dd74be25fcd1d63"
   license "MIT"
 
   bottle do
