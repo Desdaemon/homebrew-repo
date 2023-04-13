@@ -6,9 +6,9 @@ class FlutterRustBridgeCodegen < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Desdaemon/homebrew-repo/releases/download/flutter_rust_bridge_codegen-1.73.0"
-    sha256 cellar: :any_skip_relocation, monterey: "4191ba07e81cd5f7d6fc93c44b7754ec5a5136c8f09ad4525585bb401f879c88"
-    sha256 cellar: :any_skip_relocation, big_sur:  "6a99c7bad7045265ce6ae58e6adc977223a3b46fe707aaaca9b71440a67c3e4a"
+    root_url "https://github.com/Desdaemon/homebrew-repo/releases/download/flutter_rust_bridge_codegen-1.74.0"
+    sha256 cellar: :any_skip_relocation, monterey: "e78de50dd30bca979db872ace0d2132d6edf0cc8dbcbd363767bcec29fc27d6a"
+    sha256 cellar: :any_skip_relocation, big_sur:  "fe431fabaca52a63c00d0118617a25ebcd37e712db2b07069023118a86c6b91f"
   end
 
   depends_on "rust" => :build
