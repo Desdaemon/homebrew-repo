@@ -9,12 +9,10 @@ jobs:
     strategy:
       matrix:
         os:
-          # rust is no longer available in linuxbrew
-          # - ubuntu-latest
+          - macos-13
+          - ubuntu-22.04
           - macos-12
           - macos-11
-          # Unresponsive workers
-          # - macos-10.15
     runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Homebrew
@@ -46,5 +44,11 @@ jobs:
         if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@main
         with:
-          name: bottles
+          name: bottles_${{ matrix.os }}
           path: '*.bottle.*'
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@main
+        with:
+          name: logs_${{ matrix.os }}
+          path: 'logs/*'
